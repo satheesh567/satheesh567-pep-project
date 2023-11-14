@@ -63,7 +63,7 @@ public class ConnectionUtil {
 	 * tables to keep it consistent across all tests. The method will read the sql
 	 * file in resources. This will be performed before every test.
 	 */
-	public static void resetTestDatabase() {
+	public static void resetTestDatabase(){
 		try {
 			FileReader sqlReader = new FileReader("src/main/resources/SocialMedia.sql");
 			RunScript.execute(getConnection(), sqlReader);
